@@ -126,7 +126,7 @@ asdf plugin add nodejs
 asdf install nodejs 24.14.0
 
 # Pin this local repository workspace to this exact version
-asdf local nodejs 24.14.0
+asdf set nodejs 24.14.0
 
 ```
 
@@ -140,7 +140,7 @@ asdf plugin add postgres
 asdf install postgres 18.1
 
 # Pin this local repository workspace to use this database engine version
-asdf local postgres 18.1
+asdf set postgres 18.1
 
 # Initialize a fresh local database directory cluster (Required on first install)
 pg_ctl initdb
