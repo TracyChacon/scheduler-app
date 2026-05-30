@@ -65,7 +65,7 @@ Pull down the stable release repository directly into your user home workspace:
 
 ```bash
 # Clone the official core repository safely into a hidden home profile directory
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.15.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.18.1
 
 ```
 
