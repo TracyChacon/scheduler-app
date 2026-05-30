@@ -1,4 +1,4 @@
-# Full-Stack Meeting Scheduler Engine
+# 🗓️ Full-Stack Meeting Scheduler Engine
 
 A robust, self-hosted meeting scheduling application built from scratch. This engine utilizes Next.js Server Actions for secure backend computing and interfaces directly with a native local PostgreSQL instance for transaction-safe scheduling architecture.
 
@@ -6,7 +6,7 @@ A robust, self-hosted meeting scheduling application built from scratch. This en
 
 This project strictly pins dependencies and runtimes to guarantee architectural reproducibility across environments.
 
-* **Runtime Version Manager:** `asdf`
+* **Runtime Version Manager:** `asdf` v0.18.1 (revision 6a97697)
 * **Backend Environment:** Node.js v24.14.0
 * **Database Engine:** PostgreSQL v18.1
 * **Core Framework:** Next.js v14.2.3 (App Router Architecture)
