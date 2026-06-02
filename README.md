@@ -2,7 +2,7 @@
 
 A robust, self-hosted meeting scheduling application built from scratch. This engine utilizes Next.js Server Actions for secure backend computing and interfaces directly with a native local PostgreSQL instance for transaction-safe scheduling architecture.
 
-## 🛠️ System Runtime & Architecture
+## 📐 System Runtime & Architecture
 
 This project strictly pins dependencies and runtimes to guarantee architectural reproducibility across environments.
 
@@ -12,7 +12,6 @@ This project strictly pins dependencies and runtimes to guarantee architectural 
 * **Core Framework:** Next.js v14.2.3 (App Router Architecture)
 * **Database Driver:** Native `pg` connection pool client
 
----
 
 ## 📂 Project Structure
 
@@ -33,9 +32,8 @@ scheduler-app/
 ```
 
 
----
 
-## 🚀 Local Development Setup
+## 🥽 Local Development Setup
 
 Follow these steps to reproduce the application environment on your local machine:
 
@@ -200,8 +198,13 @@ npm run dev
 
 Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) in your browser to inspect the application layout.
 
-## 🧠 Defensive Architecture Highlights
+## 👺 Defensive Architecture Highlights
 
 * **Absolute Path Resolution:** The data migration utility leverages Node's native `path` module to guarantee precise `.env.local` context target parsing regardless of the caller execution directory.
 * **Transaction-Safe Seeding:** Database table configuration and initial data injections are wrapped inside strict SQL `BEGIN`/`COMMIT` wrappers to prevent partial database pollution if an initialization failure occurs.
 
+
+
+## 🔍 License
+
+Source code is visible for review and portfolio purposes only. Commercial use requires a paid license.
