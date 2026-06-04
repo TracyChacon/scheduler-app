@@ -18,7 +18,6 @@ This project strictly pins dependencies and runtimes to guarantee architectural 
 * **Transaction-Safe Seeding:** Database table configuration and initial data injections are wrapped inside strict SQL `BEGIN`/`COMMIT` wrappers to prevent partial database pollution if an initialization failure occurs.
 
 
-
 ## 📂 Project Structure
 
 ```text
