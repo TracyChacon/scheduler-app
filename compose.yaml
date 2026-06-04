@@ -11,6 +11,10 @@ services:
       - .:/app
       - /app/node_modules
     environment:
+      # Tells Turbopack to watch files reliably in Docker volumes
+      - WATCHPACK_POLLING=true 
+      # ✨ Adds explicit hot-reload handling for Next.js Rust-based Turbopack layer
+      - NEXT_DEV_TURBO_POLLING=true
       - NODE_ENV=development
       - DATABASE_URL=postgresql://postgres:postgres_secure_dev_pass@db:5432/scheduler_db
     depends_on:
