@@ -1,9 +1,9 @@
 /* /scheduler-app/src/app/globals.css */
 
-/* src/app/globals.css */
+
 @import "tailwindcss";
 
-/* 🎯 Explicitly tell Tailwind v4 to scan your component directories */
+/* 🎯 Explicitly tell Tailwind v4 to scan component directories */
 @source "../**/*.{js,ts,jsx,tsx,mdx}";
 @source "../../src/**/*.{js,ts,jsx,tsx,mdx}";
 
