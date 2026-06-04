@@ -13,10 +13,7 @@ if (!process.env.DATABASE_URL) {
 }
 
 const pool = new Pool({
-    user: 'tracy',
-    host: 'localhost',
-    database: 'scheduler_db',
-    port: 5432
+  connectionString: process.env.DATABASE_URL
 });
 
 async function runMigration() {
