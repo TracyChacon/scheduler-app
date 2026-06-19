@@ -46,8 +46,7 @@ This application is fully containerized using Docker to eliminate environment dr
 
 Before choosing a setup track, ensure you have these core tools installed on your host system:
 * **Git**
-* **Docker & Docker Compose** (If using Track A)
-* **[asdf Version Manager](https://asdf-vm.com/)** (If using Track B)
+* **Docker & Docker Compose**
 
 ---
 
@@ -104,6 +103,15 @@ docker compose exec web npm run db:migrate
 #### ***6. Verify Database Connectivity***
 
 Open your web browser and navigate to [http://localhost:3000/test-db](https://www.google.com/search?q=http://localhost:3000/test-db) to run an automated server-side internal connection sanity test. If connected properly, you will see a green **Success** badge displaying the current live database timestamp.
+
+![Docker Network Connection Monitor with success message and UTC timestamp](/public/2026-06-04%2017-24-19%20successful%20connection.png)
+
+
+##### Database Infrastucture Verification
+Below is a confirmation of the local runtime connection pool validating successful communication with the containerized POstgreSQL database: 
+
+![Successful Connection Pool Verification](./public/successful-connection.png)
+
 
 #### ***7. Tearing Down the Infrastructure***
 
